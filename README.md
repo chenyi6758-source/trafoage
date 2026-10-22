@@ -12,8 +12,8 @@
 
 200 kVA ONAN transformer, 120 kW residential peak, one simulated day per scenario:
 
-![loading and hot-spot by scenario](examples/quickstart_loading_hotspot.png)
-![daily life consumption by scenario](examples/quickstart_aging.png)
+![loading and hot-spot by scenario](quickstart_loading_hotspot.png)
+![daily life consumption by scenario](quickstart_aging.png)
 
 | scenario | F_EQA | life consumed / day | max hot-spot | time > 110 °C |
 |---|---|---|---|---|
