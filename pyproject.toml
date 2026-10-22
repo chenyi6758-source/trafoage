@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trafoage"
+version = "0.1.0"
+description = "Distribution-transformer thermal aging under DER scenarios (IEEE C57.91-2011)"
+readme = "README.md"
+license = { text = "BSD-3-Clause" }
+requires-python = ">=3.9"
+dependencies = ["numpy", "pandas"]
+authors = [{ name = "Chen Yi", email = "chenyi6758@gmail.com" }]
+
+[project.urls]
+Homepage = "https://github.com/chenyi6758-source/trafoage"
+
+[project.optional-dependencies]
+test = ["pytest"]
+plot = ["matplotlib"]
+grid = ["pandapower"]
+
+[project.scripts]
+trafoage = "trafoage.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
